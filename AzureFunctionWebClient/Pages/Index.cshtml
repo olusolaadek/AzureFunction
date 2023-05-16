@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+ 
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Product ID</td>
+                <td>Product Name</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        @if (Model.Products.Any())
+        { foreach (var item in Model.Products)
+            {
+               <tr>
+                <td>@item.ProductId</td><td> @item.ProductName</td><td>@item.Quantity</td>
+            </tr> 
+            }
+            
+        }
+    </table>
+</div>

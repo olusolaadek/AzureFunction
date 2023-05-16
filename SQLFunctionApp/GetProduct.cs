@@ -3,9 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
+// using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace SQLFunctionApp
@@ -38,7 +41,7 @@ namespace SQLFunctionApp
             }
 
             conn.Close();
-            return new OkObjectResult(products);
+            return new OkObjectResult(JsonSerializer.Serialize( products));
             //log.LogInformation("C# HTTP trigger function processed a request.");
 
             //string name = req.Query["name"];
@@ -54,14 +57,10 @@ namespace SQLFunctionApp
             // return new OkObjectResult(responseMessage);
         }
 
-        //[FunctionName("GetNewProducts")]
-        //public static async Task<List<Product>> RunGetNewProducts()
-        //{
-        //    string functionUrl = "";
+        
+        
 
-        //}
-
-       [FunctionName("GetProduct")]
+        [FunctionName("GetProduct")]
         public static async Task<IActionResult> RunGetProduct(
            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
            ILogger log) //, "post"
@@ -87,7 +86,7 @@ namespace SQLFunctionApp
                     };
 
                 }
-                return new OkObjectResult(product);
+                return new OkObjectResult(JsonSerializer.Serialize( product));
             }
             catch (Exception ex)
             {
