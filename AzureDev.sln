@@ -5,7 +5,11 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLFunctionApp", "SQLFunctionApp\SQLFunctionApp.csproj", "{7E2CD83E-EDEA-4A13-8172-FAAB1F5510DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionWebClient", "AzureFunctionWebClient\AzureFunctionWebClient.csproj", "{F584E53E-95D3-4BB0-8154-ACA44310C235}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionWebClient", "AzureFunctionWebClient\AzureFunctionWebClient.csproj", "{F584E53E-95D3-4BB0-8154-ACA44310C235}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Function-cs-entity-counter", "Function-cs-entity-counter\Function-cs-entity-counter.csproj", "{CABE7665-57D3-4F93-B540-E8A21B21B6BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureStorageQueue", "AzureStorageQueue\AzureStorageQueue.csproj", "{AC81F403-ACCA-4328-A1E2-1F4435C972EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{F584E53E-95D3-4BB0-8154-ACA44310C235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F584E53E-95D3-4BB0-8154-ACA44310C235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F584E53E-95D3-4BB0-8154-ACA44310C235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABE7665-57D3-4F93-B540-E8A21B21B6BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABE7665-57D3-4F93-B540-E8A21B21B6BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABE7665-57D3-4F93-B540-E8A21B21B6BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABE7665-57D3-4F93-B540-E8A21B21B6BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC81F403-ACCA-4328-A1E2-1F4435C972EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC81F403-ACCA-4328-A1E2-1F4435C972EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC81F403-ACCA-4328-A1E2-1F4435C972EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC81F403-ACCA-4328-A1E2-1F4435C972EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

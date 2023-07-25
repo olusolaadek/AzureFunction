@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Function_cs_entity_counter": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7141",
+      "launchBrowser": false
+    }
+  }
+}
